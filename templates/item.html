@@ -1,0 +1,84 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+    <div class="thumbnail poke-item">
+      <img ng-src="./images/snorlax.png" alt="snorlax">
+      <div class="caption">
+        <div class="col-sm-6"><h2>{{itemCtrl.name}}</h2></div>
+        <div class="col-sm-6"><h2>{{1500|currency}}</h2></div>
+        <!-- the nav pills -->
+        <section ng-init="tab=1">
+          <ul class="nav nav-pills">
+            <li role="presentation" ng-class="{active: tab === 1}">
+              <a href ng-click="tab=1">Description</a>
+            </li>
+            <li role="presentation" ng-class="{active: tab === 2}">
+              <a href ng-click="tab=2">Reviews</a>
+            </li>
+            <li role="presentation" ng-class="{active: tab === 3}">
+              <a href ng-click="tab=3">Specification</a>
+            </li>
+          </ul>
+        </section><br>
+        <!-- the description panel -->
+        <div class="panel" ng-show="tab === 1">
+          <h4>Description</h4>
+          <p>The description of the Pokémon goes here</p>
+        </div>
+        <!-- the reviews panel -->
+         <div class="panel" ng-show="tab === 2">
+          <h4>Reviews</h4>
+          
+          <blockquote ng-show="!itemCtrl.item.length">
+            <b>No reviews yet</b>
+          </blockquote>
+
+      <!--     <div ng-repeat="review in itemCtrl.item">
+            <blockquote>
+              <b>{{review.title}}</b>
+              <br><br>{{review.reviewText}}
+              <br><br><cite>{{review.rating}} Stars</cite>
+            </blockquote><br>
+          </div> -->
+          <!-- review form -->
+          <form ng-submit="itemCtrl.addReview()">
+          <!-- title input field -->
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input class="form-control" id="title" aria-describedby="titleDescription" placeholder="Enter title" ng-model="itemCtrl.newReview.title">
+            </div>
+            <!-- for drop down selection thing -->
+            <div class="form-group">
+              <label for="exampleSelect1">Ratings</label>
+              <select class="form-control" id="exampleSelect1" ng-model="itemCtrl.newReview.rating">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+            </div>
+            <!-- text input box -->
+            <div class="form-group">
+              <label for="reviewTextarea">Review</label>
+              <textarea class="form-control" id="reviewTextarea" rows="3" ng-model="itemCtrl.newReview.reviewText"></textarea>
+            </div>
+            <!-- submit button-->
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <!-- specification panel -->
+         <div class="panel" ng-show="tab === 3">
+          <h4>Specification</h4>
+          <p>{{itemCtrl.item.specification}}</p>
+        </div>
+        <p><a href="#" class="btn btn-success" role="button">Add to cart</a> <a href="#" class="btn btn-danger" role="button">Add to wishlist</a></p>
+      </div>
+    </div>
+  </div>
+</div>

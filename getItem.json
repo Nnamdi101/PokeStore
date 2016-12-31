@@ -1,0 +1,16 @@
+{
+	"name": "Snorlax",
+	"description": "The haviest pokemon ever weighing over 200000 pounds",
+	"review": [{
+		"comment": "Snorlax is a lazy bum that eats all my food and sleeps all day. I dont know why I ever bought him. I want my money back",
+		"email": "mankos@gmail.com",
+		"rating": "7"
+	},{
+		"comment": "He scares the neighbours, so...... I'm satisfied",
+		"email": "Nnamdi@gmail.com",
+		"rating": "9"
+	}],
+	"reviewer": "Michael Mankos",
+	"specification": "Snorlax is about 100 of pure laziness"
+
+}

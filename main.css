@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Purple+Purse');
+
+.content{
+	background-color: #EAECEE;
+	width: 100%;
+}
+.navbar{
+	margin-bottom: 0px;
+}
+.navbar-right{
+	margin-right: 2px;
+}
+
+.logo-yellow{
+	color: orange;
+}
+.logo-red{
+	color: #D64A1A;
+}
+.thumbnail a>img{
+	height: 200px;
+}
+.poke-nav{
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 100%;
+	
+}
+.navbar-inverse{
+	background-color: rgba(0,0,0,0.94);
+	border: none;
+}
+.jumbotron{
+    height: 100vh;
+}
+
+.poke-jumbo{
+	background-color: yellow;	
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.94+0,0+100;Neutral+Density */
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.94) 0%, rgba(0,0,0,0) 100%), url("images/jumbotron.png");; /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.94) 0%,rgba(0,0,0,0) 100%), url("images/jumbotron.png");; /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.94) 0%,rgba(0,0,0,0) 100%), url("images/jumbotron.png");; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+
+}
+#box-wrapper{
+	font-family: 'Gloria Hallelujah', cursive;
+	color: white;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#underground{
+	color: red;
+}
+#form{
+	color: white;
+}

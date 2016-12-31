@@ -1,0 +1,99 @@
+
+[{
+	"name": "Pikachu",
+	"price": 20.05,
+	"description": "I am Pikachu!!!!, die by my fire bitch!!!!!",
+	"canPurchase": true,
+	"soldOut": false,
+	"image": "Pikachu.png",
+	"Elevel": 1
+},
+{
+	"name": "Bulbasaur",
+	"price": 40.25,
+	"description": "The best Bulbasaur on this side on the world",
+	"canPurchase": true,
+	"soldOut": false,
+	"image": "Bulbasaur.png",
+	"Elevel": 1
+},
+{
+	"name": "Charmander",
+	"price": 50.25,
+	"description": "The best Bulbasaur on this side on the world",
+	"canPurchase": true,
+	"soldOut": false,
+	"image": "charmander.png",
+	"Elevel": 1
+},
+{
+	"name": "Pidgey",
+	"price": 10.25,
+	"description": "The best Bulbasaur on this side on the world",
+	"canPurchase": true,
+	"soldOut": false,
+	"image": "Pidgey.png",
+	"Elevel": 1
+},
+{
+	"name": "Sandslash",
+	"price": 80.25,
+	"description": "The best Bulbasaur on this side on the world",
+	"canPurchase": true,
+	"soldOut": false,
+	"image": "Sandslash.png",
+	"Elevel": 1
+},
+{
+	"name": "Squirtle",
+	"price": 12.25,
+	"description": "The best Bulbasaur on this side on the world",
+	"canPurchase": true,
+	"soldOut": false,
+	"image": "Squirtle.png",
+	"Elevel": 1
+},
+{
+	"name": "Meowth",
+	"price": 20.25,
+	"description": "The best Bulbasaur on this side on the world",
+	"canPurchase": true,
+	"soldOut": false,
+	"image": "Meowth.png",
+	"Elevel": 1
+},{
+	"name": "Zubat",
+	"price": 5.25,
+	"description": "The best Bulbasaur on this side on the world",
+	"canPurchase": true,
+	"soldOut": false,
+	"image": "Zubat.png",
+	"Elevel": 1
+},
+{
+	"name": "Snorlax",
+	"price": 90.25,
+	"description": "The best Bulbasaur on this side on the world",
+	"canPurchase": true,
+	"soldOut": false,
+	"image": "snorlax.png",
+	"Elevel": 1
+},
+{
+	"name": "Clarfairy",
+	"price": 15.25,
+	"description": "The best Bulbasaur on this side on the world",
+	"canPurchase": true,
+	"soldOut": false,
+	"image": "clarfairy.png",
+	"Elevel": 1
+},
+{
+	"name": "Dragonite",
+	"price": 30.25,
+	"description": "The best Bulbasaur on this side on the world",
+	"canPurchase": true,
+	"soldOut": false,
+	"image": "dragonite.png",
+	"Elevel": 1
+}]
