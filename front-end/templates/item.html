@@ -2,10 +2,10 @@
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
     <div class="thumbnail poke-item">
-      <img ng-src="./images/snorlax.png" alt="snorlax">
+      <img ng-src="{{itemCtrl.data.imagePath}}" alt="snorlax">
       <div class="caption">
-        <div class="col-sm-6"><h2>{{itemCtrl.name}}</h2></div>
-        <div class="col-sm-6"><h2>{{1500|currency}}</h2></div>
+        <div class="col-sm-6"><h2>{{itemCtrl.data.name}}</h2></div>
+        <div class="col-sm-6"><h2>{{itemCtrl.data.price|currency}}</h2></div>
         <!-- the nav pills -->
         <section ng-init="tab=1">
           <ul class="nav nav-pills">
@@ -23,23 +23,23 @@
         <!-- the description panel -->
         <div class="panel" ng-show="tab === 1">
           <h4>Description</h4>
-          <p>The description of the Pokémon goes here</p>
+          <p>{{itemCtrl.data.description}}</p>
         </div>
         <!-- the reviews panel -->
          <div class="panel" ng-show="tab === 2">
           <h4>Reviews</h4>
           
-          <blockquote ng-show="!itemCtrl.item.length">
+          <blockquote ng-show="!itemCtrl.data.reviews">
             <b>No reviews yet</b>
           </blockquote>
 
-      <!--     <div ng-repeat="review in itemCtrl.item">
+          <div ng-repeat="review in itemCtrl.data.reviews">
             <blockquote>
               <b>{{review.title}}</b>
-              <br><br>{{review.reviewText}}
+              <br><br><cite>{{review.text}}<cite>
               <br><br><cite>{{review.rating}} Stars</cite>
             </blockquote><br>
-          </div> -->
+          </div>
           <!-- review form -->
           <form ng-submit="itemCtrl.addReview()">
           <!-- title input field -->

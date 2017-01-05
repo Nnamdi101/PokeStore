@@ -52,37 +52,10 @@
 	app.controller('homeController',function(pokeList){
 		this.items = pokeList;
 	});
-	app.controller('itemController',function(Poke,$stateParams,$http){
-		this.name=$stateParams.name;
-		this.iid=$stateParams.iid;
-		this.item = [];
+	app.controller('itemController',function(/*Poke,*/$stateParams,$http){
 
-		if(Poke != null){
-			this.item = Poke;
-			console.log("I shouldn't be in here");
-		}
-
-		this.newReview = {};
-		var rr = this.newReview;
-		var iid = this.iid;
-
-		this.addReview = function(){
-			$http({
-			  method: 'POST',
-			  url: 'includes/insertComment.php',
-			  params: {
-			  	iid: iid, 
-			  	reviewText:rr.reviewText, 
-			  	rating:rr.rating, 
-			  	title: rr.title
-			  }
-			}).then(function successCallback(response) {
-			    alert("review submitted");
-			  }, function errorCallback(response) {
-			    alert("error in submitting request");
-			  });
-			this.newReview = {};
-		};
+		var vm = this;
+		vm.data=$stateParams.data;
 
 
 	});

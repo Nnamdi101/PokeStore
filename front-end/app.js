@@ -16,7 +16,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			controllerAs: "homeCtrl",
 			resolve: {
 				pokeList: function($http){
-					return $http.get("includes/getAllitems.php")
+					return $http.get("api/allItems")
 						.then(function(response){
 							return response.data;
 					})
@@ -24,27 +24,13 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			}
 		})
 		.state("item",{
-			url:"/items/:iid/:name",
+			url:"/items/:name",
 			templateUrl: "templates/item.html",
 			controller: "itemController",
 			controllerAs: "itemCtrl",
-			resolve: {
-				Poke: function($http,$stateParams){
-					return $http({
-						url: "includes/getItemReviews.php",
-						method: "GET",
-						params: {iid: $stateParams.iid}
-
-					})
-					.then(function(response){
-							return response.data;
-					},
-					function(error){
-						return null;
-					})
-				}
+			params: {
+				data: null,
 			}
-
 		});
 
 	$urlRouterProvider.otherwise("/home");

@@ -1,0 +1,56 @@
+
+db.items.insert(
+[{
+	"name": "Pikachu",
+	"price": 20.05,
+	"description": "I am Pikachu!!!!, die by my fire bitch!!!!!",
+	"canPurchase": true,
+	"soldOut": false,
+	"Elevel": 1,
+	"imagePath": "./images/pikachu.png",
+	"reviews": [
+		{
+			"title": "Best purchase ever!!!!!!!!!",
+			"rating": 5,
+			"text": "I bought Pickachu a couple of days back and this was the best decision ever. Much better than that lazy bum Snorlax"
+		},
+		{
+			"title": "Hyped",
+			"rating": 2,
+			"text": "Why is Pickachu the face of the pokemon franchise, Charmander is way cuter"	
+		}
+
+	]
+},
+{
+	"name": "Bulbasaur",
+	"price": 40.25,
+	"description": "This is Bulbasaur, one of the most fear pokemon in the world!!!!!!!",
+	"canPurchase": true,
+	"soldOut": false,
+	"Elevel": 1,
+	"imagePath": "./images/Bulbasaur.png",
+	"reviews": [
+		{
+			"title": "Not as good as advertised",
+			"rating": 3,
+			"text": "Bulbasaur, what kind of name is that, I swear who named some of these Pokemon"
+		}
+	]
+},
+{
+	"name": "Snorlax",
+	"price": 30.25,
+	"description": "The haviest Pokemon weighing over 2000 pounds",
+	"canPurchase": true,
+	"soldOut": false,
+	"Elevel": 1,
+	"imagePath": "./images/snorlax.png",
+	"reviews": [
+		{
+			"title": "Lazy bum",
+			"rating": 3,
+			"text": "I want my money back, Snorlax is a lazy bum that sleeps all day and eats all my food"
+		}
+	]
+}]);
