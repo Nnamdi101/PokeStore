@@ -14,7 +14,17 @@ app.use(function(req, res, next){
 	next();
 });
 app.use(express.static("./front-end"));
+app.all("*",function(req,res,next){
+	var path = req.path;
+	console.log("in here.......");
+	if(path.search("/api/*")!= -1){
+		next();
+	}else{
+		res.sendFile(__dirname+'/front-end/PokeStore.html');
+	}
 
+
+})
 
 
 //mongoose collection
