@@ -3,10 +3,18 @@
 	<div class="container poke-nav">
 		<div class="navbar-header navbar-left">
       		<a class="navbar-brand" href="#">
-            <!-- <img alt="brand" src="./images/logo.png"> -->
-        		<span style="color:red">Pokémon</span><span style="color:white">Underground</span>
+            	<img alt="brand" src="./images/logo.png">
       		</a>
+      		<p class="navbar-text"><span style="color:red">Pokémon</span><span style="color:white">Underground</span></p>
     	</div>
-		<button type="button" class="btn btn-warning navbar-btn navbar-right" data-toggle="modal" data-target="#signin">Sign In <span class="glyphicon glyphicon-user" aria-hidden="true"></span></button>
+    	<form class="navbar-form navbar-left">
+        	<div class="form-group">
+          	<input type="text" class="form-control poke-search-bar" placeholder="Search">
+        	</div>
+      	</form>
+      	
+		<button type="button" class="poke-sign-up navbar-btn navbar-right" >Sign Up <span class="glyphicon glyphicon-user" aria-hidden="true"></span></button>
+		<button type="button" class="btn btn-primary navbar-btn navbar-right" >Sign In</button>
+		
 	</div>
 </nav>

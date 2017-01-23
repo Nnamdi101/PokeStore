@@ -16,7 +16,6 @@ app.use(function(req, res, next){
 app.use(express.static("./front-end"));
 app.all("*",function(req,res,next){
 	var path = req.path;
-	console.log("in here.......");
 	if(path.search("/api/*")!= -1){
 		next();
 	}else{
@@ -36,7 +35,7 @@ mongoose.connect("mongodb://localhost:27017/pokestore",function(err,db){
 
 var Item = mongoose.model('item', {name: String});
 
-app.get('/API/allItems',function(req, res){
+app.get('/api/allItems',function(req, res){
 	Item.find({}).exec(function(err, result){
 		res.send(result);
 	})
